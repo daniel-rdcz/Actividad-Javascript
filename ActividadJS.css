@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 37px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px 0 10px 0;
+    padding-bottom: 5px;
+    line-height: 1.2;
+  }
+  
+  table {
+    width: 100%;
+    column-width: px;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  .num-problema{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-weight: 1000;
+    font-size: large;
+  }
+  
+  th {
+    background-color: #cdc6c66b;
+    font-weight: 600;
+  }
+  
+  a {
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 90%;
+          color: rgb(239, 203, 25);
+    font-family: 'Consolas', 'Menlo', 'Courier New', monospace;
+  }
+
+  .result{
+    align-items: center;
+    text-align: center;
+  }
+
+  .resp{
+    color: gold;
+  }
+
+  input{
+    width: 80px;
+  }
+  

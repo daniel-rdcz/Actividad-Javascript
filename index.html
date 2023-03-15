@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="./ActividadJS.css">
+    <script src="./Actividad.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Actividad JavaScript</h1>
+
+		<h2 style="border-bottom: 2px solid #ccc;">Actividad en clase: JavaScript</h2>
+		<table>
+			<thead>
+				<tr>
+					<th style="width: 103px;">Problema</th>
+					<th>Descripción</th>
+					<th style="width: 260px";>Resultado</th>
+				</tr>
+			</thead>
+			<tbody>
+				 
+				<tr>
+					<td class="num-problema">1</td>
+					<td>Escribe una función que encuentre el primer carácter de un cadena de texto que no se repite. Prueba tu función con: 'abacddbec'</td>
+					<td class="result">
+                        <input type="text"  id="cadena" >
+                        <button onclick="noRepetido()">resultado</button>
+                        <p id="resp-1" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">2</td>
+					<td>Escribe una función que implemente el algoritmo 'bubble-sort' para ordenar una lista de números.</td>
+					<td class="result">
+                        <input type="text" id="input-2" >
+                        <button onclick="bubbleSort()">Ordenar</button>
+                        <p class="resp" id="resp-2"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">3</td>
+					<td>Escribe dos funciones: la primera que invierta un arreglo de números y regrese un nuevo arreglo con el resultado; la segunda que modifique el mismo arreglo que se pasa como argumento. No se permite usar la función integrada 'reverse'.</td>
+					<td class="result">
+                        <input type="text" id="input-3">
+                        <br>
+                        <button onclick="reverseAndDisplay()">Invertir arreglo</button>
+                        <button onclick="reverseInPlaceAndDisplay()">Invertir arreglo en su lugar</button>
+                        <p id="resp-3-1" class="resp"></p>
+                        <p id="resp-3-2" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">4</td>
+					<td>Escribe una función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="num-problema">5</td>
+					<td>Escribe una función que calcule el máximo común divisor de dos números.</td>
+					<td class="result">
+                        <input type="text"  id="a"  onkeyup="recibirAB()">
+                        <input type="text"  id="b"  onkeyup="recibirAB()">
+                        <p id="resp" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">6</td>
+					<td>Crea una función que cambie una cadena de texto a 'Hacker Speak'. Por ejemplo, para la cadena 'Javascript es divertido', su hacker speak es: 'J4v45c1pt 35 d1v3rt1d0'.</td>
+					<td class="result">
+                        <input type="text"  id="input-6"onkeyup="HackerSpeak()">
+                        <p id="resp-6" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">7</td>
+					<td>Escribe una función que reciba un número, y regrese una lista con todos sus factores. Por ejemplo: factoriza(12) -> [1, 2, 3, 4, 6, 12].</td>
+					<td class="result">
+                        <input type="text"  id="input-7" onkeyup="Factores()">
+                        <p id="resp-7" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">8</td>
+					<td>Escribe una función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan. Por ejemplo: quitaDuplicados([1, 0, 1, 1, 0, 0]) -> [1, 0]</td>
+					<td class="result">
+                        <input type="text" id="input-8" onkeyup="Duplicados()">
+                        <p id="resp-8" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">9</td>
+					<td>Escribe una función que reciba como parámetro una lista de cadenas de texto, y regrese la longitud de la cadena más corta.</td>
+					<td class="result">
+                        <p>Inserte cadenas separadas por ","</p>
+                        <input type="text" id="cadenas" >
+                        <button onclick="mostrarLongitudMasCorta()">resultado</button>
+                        <p id="resp-9" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">10</td>
+					<td>Escribe una función que revise si una cadena de texto es un palíndromo o no.</td>
+					<td class="result">
+                        <input type="text"  id="input-10"  onkeyup="Palindromo()">
+                        <p id="resp-10" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">11</td>
+					<td>Escribe una función que tome una lista de cadena de textos y devuelva una nueva lista con todas las cadenas en orden alfabético.</td>
+					<td class="result">
+                        <input type="text"  id="unorderList"  onkeyup="ordenarAZList()">
+                        <p id="orderList" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">12</td>
+					<td>Escribe una función que tome una lista de números y devuelva la mediana y la moda.</td>
+					<td class="result">
+                        <input type="text" id="input-12">
+                        <button type="button" onclick="calcular()">resultado</button>
+                        <p id="resp-12" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">13</td>
+					<td>Escribe una función que tome una lista de cadenas de texto y devuelva la cadena más frecuente.</td>
+					<td class="result">
+                        <p>Inserta cadenas separadas por ","</p>
+                        <input type="text" id="cadena-input">
+                        <button onclick="encontrarCadenaMasFrec()">resultado</button>
+                        <p id="resultado" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">14</td>
+					<td>Escribe una función que tome un número y devuelva verdadero si es una potencia de dos, falso de lo contrario.</td>
+                    <td class="result">
+                        <input type="text" id="input-14">
+                        <button onclick="verificarPotenciaDeDos()">Verificar</button>
+                        <p id="resp-14" class="resp"></p>
+                    </td>
+				</tr>
+				<tr>
+					<td class="num-problema">15</td>
+					<td>Escribe una función que tome una lista de números y devuelva una nueva lista con todos los números en orden descendente.</td>
+					<td>
+                        <input type="text" id="input-15">
+                        <button onclick="ordenar()">Ordenar números</button>
+                        <p id="resp-15" class="resp"></p>
+                    </td>
+				</tr>
+				 
+				
+				
+			</tbody>
+		</table>
+		<h2 style="border-bottom: 2px solid #ccc;">José Daniel Rodríguez Cruz - A01781933</h2>
+	</div>
+</body>
+</html>
