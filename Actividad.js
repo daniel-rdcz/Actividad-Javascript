@@ -17,7 +17,7 @@ function noRepetido() {
     }
   }
 
-  return document.getElementById("resp-1").textContent=String("No se encontraron elementos que no se repitan");
+  return document.getElementById("resp-1").textContent = String("No se encontraron elementos que no se repitan");
 }
 
 //Ejercicio 2
@@ -71,8 +71,7 @@ function reverseInPlaceAndDisplay() {
   reverseArrayInPlace(array);
   document.getElementById("resp-3-2").innerHTML = ` Arreglo invertido en su lugar: ${array}`;
 }
-// Funcion que recibe el arreglo original y llama a las demas funciones
-// Función que devuelve un nuevo arreglo invertido
+
 function reverseArray(array) {
   const newArray = [];
   for (let i = array.length - 1; i >= 0; i--) {
@@ -81,7 +80,6 @@ function reverseArray(array) {
   return newArray;
 }
 
-// Función que modifica el arreglo original
 function reverseArrayInPlace(array) {
   for (let i = 0; i < Math.floor(array.length / 2); i++) {
     const temp = array[i];
@@ -90,7 +88,21 @@ function reverseArrayInPlace(array) {
   }
 }
 
+//Ejercicio 4
+function capitalizar() {
+  let texto = document.getElementById('input-4').value;
+  let resultado = capitalizarPalabras(texto);
+  document.getElementById('resp-4').innerText = resultado;
+}
 
+function capitalizarPalabras(texto) {
+  let palabras = texto.split(' ');
+  for (let i = 0; i < palabras.length; i++) {
+    let palabra = palabras[i];
+    palabras[i] = palabra.charAt(0).toUpperCase() + palabra.slice(1);
+  }
+  return palabras.join(' ');
+}
 
 
 // Ejercicio 5 
@@ -157,7 +169,7 @@ function Duplicados() {
           NoDuplicados.push(arr[i]);
       }
   }
-  return document.getElementById("resp-8").textContent = NoDuplicados;
+  return document.getElementById("resp-8").textContent = String(NoDuplicados);
 }
 
 
@@ -199,10 +211,7 @@ function ordenarAZList() {
     caracteres.sort(); // Para ordenar en orden alfabetico
     const orderText = caracteres.join("");
     document.getElementById("orderList").textContent=orderText;
-  }
-
-
-
+}
 // Ejercicio 12
 function calcular() {
   let cadenaNum = document.getElementById("input-12").value.split(",").map(Number);
@@ -211,12 +220,10 @@ function calcular() {
 }
 
 function calcularMedianaYModa(cadenaNum) {
-  // Ordenar los números de menor a mayor
   cadenaNum.sort(function(a, b) {
     return a - b;
   });
 
-  // Calcular la mediana
   let mediana;
   let mitad = Math.floor(cadenaNum.length / 2);
   if (cadenaNum.length % 2 === 0) {
@@ -225,7 +232,6 @@ function calcularMedianaYModa(cadenaNum) {
     mediana = cadenaNum[mitad];
   }
 
-  // Calcular la moda
   let frecuencias = {};
   let moda = [];
   let maxFrecuencia = 0;
@@ -274,8 +280,7 @@ function cadenaMasFrecuente(lista) {
       cadenaMasFrec = cadena;
     }
   }
-  
-  // Devolver la cadena más frecuente
+
   return cadenaMasFrec;
 }
 
@@ -294,6 +299,7 @@ function verificarPotenciaDeDos() {
   }
 }
 
+//Ejercicio 15
 function ordenarDescendente(numeros) {
   return numeros.sort(function(a, b) {
     return b - a;
@@ -301,8 +307,7 @@ function ordenarDescendente(numeros) {
 }
 
 function ordenar() {
-  let numeros = document.getElementById("input-15").value;
-  numeros.split(",")
+  let numeros = document.getElementById("input-15").value.split(",").map(Number);
   let numerosOrdenados = ordenarDescendente(numeros);
   document.getElementById("resp-15").innerHTML = `${numerosOrdenados}`;
 }
